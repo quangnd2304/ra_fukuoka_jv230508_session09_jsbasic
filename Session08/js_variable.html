@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cách khai báo biến</title>
+</head>
+
+<body>
+    <script>
+        /*
+            Cú pháp khai báo biến
+            var | let | const [variableName] = value;
+        */
+        //Sử dụng từ khóa let để khai báo 1 biến chứa mã sinh viên
+        let studentId;
+        console.log("Khai báo biến thì giá trị của biến lúc đó có kiểu dữ liệu là: ", typeof (studentId));
+        //Khởi tạo giá trị cho biến mã sinh viên
+        studentId = "SV001";
+        console.log("Sau khi khởi tạo giá trị thì biến có kiểu dữ liệu là: ", typeof (studentId));
+        // Sử dụng từ khóa let để khai báo và khởi tạo giá trị biến chứa tên sinh viên
+        let studentName = "Nguyễn Văn A";
+        // Khai báo và khởi tạo giá trị cho các biến a,b,c
+        let a = 10, b = "abc", c = 8;
+        // Phân biệt var, let, const
+        /*
+            var:
+                - Khai báo biến toàn cục hoặc cục bộ
+                - Khai báo lại hoặc gán lại giá trị cho biến
+                - hoisting
+        */
+        //B1: var age; --> hoisting
+        console.log("Giá trị của biến age là: ", age);
+        //B2: age = 18;
+        var age = 18;
+        var age;//Khai báo lại biến var
+        age = 20;//gán lại giá trị biến var
+        /*
+            let:
+                - Phạm vi trong khối lệnh
+                - Không thể khai báo lại, có thể gán lại giá trị
+                - Không hoisting
+        */
+        {
+            // console.log("giá trị mark trước khai báo: ", mark); Không hoisting
+            // Trong khối lệnh
+            let mark = 20;
+            // let mark; KHông thể khai báo lại
+            mark = 50;// Có thể gán lại
+        }
+        // console.log("giá trị biến mark: ", mark);
+        /*
+            const:
+                - Phạm vi trong khối lệnh
+                - Không thể khai báo lại, không thể gán lại giá trị
+                - Không hoisting
+        */
+        {
+            // console.log("Giá trị PI: ", PI);Không hoisting
+            const PI = 3.14;
+            //const PI; Không thể khai báo lại
+            // PI = 5;Không thể gán lại giá trị
+        }
+    </script>
+</body>
+
+</html>

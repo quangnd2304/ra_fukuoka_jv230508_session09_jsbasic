@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các cách viết JS</title>
+</head>
+
+<body>
+    <!-- C1: Cách viết inline: nhúng javascript trong thẻ html -->
+    <button onclick="alert('Bạn đang sử dụng cách viết inline')">Inline</button>
+    <!-- C2: Cách viết internal: nhúng javascript trong file html -->
+    <button onclick="handleClickInternal()">Internal</button>
+    <script>
+        function handleClickInternal() {
+            alert("Bạn đang sử dụng cách viết internal");
+        }
+    </script>
+    <!-- C3: Cách viết external: viết file javascript tách khỏi html, nhúng thông qua thẻ script -->
+    <button onclick="handleClickExternal()">External</button>
+    <!-- Nhúng file js vào trong file html -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

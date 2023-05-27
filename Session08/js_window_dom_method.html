@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các phương thức của window và dom</title>
+</head>
+
+<body>
+    <script>
+        // Các phương thức Window
+        // 1> Phương thức alert("message"): Bật ra 1 hộp thoại thông báo
+        alert("Thầy Quang đẹp zai nhỉ");
+        // 2> Phương thức confirm("message"): Xác nhận thông báo
+        // Return: OK --> true, Cancel --> false
+        let result = confirm("Thầy Vụ cũng đẹp zai giống thầy Quang đúng không các em?");
+        alert("Giá trị trả về của confirm là: " + result);
+        // 3> Phương thức prompt("message"): yêu cầu nhập dữ liệu
+        // Return: OK --> dữ liệu người dùng nhập, Cancel --> null
+        let data = prompt("Nhập vào tên của bạn");
+        alert("Tên vừa nhập là: " + data);
+        // 4> Phương thức console.log("message"): In thông tin ra màn hình console
+        console.log("Rikkei Academy - Học viện đào tạo CNTT");
+        console.log("Rikkei Academy", "Học viện đào tạo CNTT", "Chất lượng Nhật Bản");
+        // Các phương thức DOM
+        // 5> Phương thức document.write("message"): In thôn tin ra màn hình DOM
+        document.write("Chúc các bạn buổi tối vui vẻ");
+
+
+    </script>
+</body>
+
+</html>

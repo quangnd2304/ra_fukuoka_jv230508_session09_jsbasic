@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các kiểu dữ liệu</title>
+</head>
+
+<body>
+    <script>
+        // Biến nhận kiểu dữ liệu của giá trị mà nó gán vào
+        // 1. Primitive: Kiểu dữ liệu nguyên thủy
+        // 1.1. underfined: chưa xác định kiểu dữ liệu
+        let studentId;
+        console.log("Kiểu dữ liệu của studentID khi chưa gán giá trị: ", typeof (studentId));
+        // 1.2. number: số
+        let age = 10;
+        console.log("Kiểu dữ liệu của age khi đã gán giá trị 10: ", typeof (age));
+        let mark = 8.7;
+        console.log("Kiểu dữ liệu của mark khi đã gán giá trị 8.7: ", typeof (mark));
+        // 1.3. String: chuỗi
+        let studentName = "Nguyễn Văn A";
+        console.log("Kiểu dữ liệu của studentName: ", typeof (studentName));
+        let className = 'JV230508';
+        console.log("kiểu dữ liệu của className: ", typeof (className));
+        // 1.4. Boolean: true | false
+        let check = true;
+        console.log("Kiểu dữ liệu của check: ", typeof (check));
+
+        // 2. Composite / Non_primitive / reference: Tham chiếu
+        // Array - Object ---> Object
+        let arr = [1, 4, 7, 9];
+        console.log("Kiểu dữ liệu của arr: ", typeof (arr));
+        let obj = { studentId: "SV001", studentName: "Nguyễn Văn A" };
+        console.log("Kiểu dữ liệu của obj: ", typeof (obj));
+
+    </script>
+</body>
+
+</html>
